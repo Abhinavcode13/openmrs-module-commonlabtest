@@ -346,7 +346,7 @@ function validate(form) {
     var sampleIdentifier = document.getElementById('sample_identifier').value;
     var datepicker = document.getElementById('collectionDatePciker').value;
 
-    var reText = new RegExp("^[A-Za-z][ A-Za-z0-9_().%]*$");
+    var reText = new RegExp("^[A-Za-z][A-Za-z0-9_().%]*$");
     var doubleErrorMessage = "The only value you can enter here is a double number and pattern should be like this (x,xx,xx.x)";
     var doubleReg = new RegExp("^\\d{0,2}(\\.\\d{0,2}){0,1}$");
     var regErrorMesssage = "Text contains Invalid characters.Units only accepts alphabets with _().% special characters";
